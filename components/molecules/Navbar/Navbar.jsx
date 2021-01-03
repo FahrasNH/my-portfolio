@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 const Navbar = ({ state, setState }) => (
-  <Grid container>
+  <Grid container style={{ height: '10%' }}>
     <Grid item xs={6}>
       <View
         backgroundImage="linear-gradient(to bottom right, #321D51, #5D3D8C)"
