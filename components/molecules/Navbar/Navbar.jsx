@@ -38,7 +38,7 @@ const Navbar = ({ state, setState }) => {
             const active = router.pathname === text ? 'active' : ''
 
             return (
-              <ListItem button key={text} className="navbar-item" style={{ marginRight: (router.pathname !== '/') && text === '/contact' ? '0' : '50px', }}>
+              <ListItem button key={text} className="navbar-item" style={{ marginRight: (router.pathname !== '/') && (text === '/contact') ? '0' : '50px', }}>
                 <Link href={text}>
                   <ListItemText primary={text !== '/' ? capitalize(text.slice(1)) : 'Menu'} className={`navbar-text ${active}`}/>
                 </Link>

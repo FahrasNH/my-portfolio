@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View } from '../atoms'
 import {
-  Navbar, TitleDesc
+  Navbar, TitleDesc, ImageBanner
 } from '../molecules'
 import {
   Grid
@@ -20,6 +20,7 @@ const Header = () => {
       <Navbar state={state} setState={setState} />
       <Grid container style={{ padding: '0 105px', alignItems: 'center', height: '70%' }}>
         <TitleDesc />
+        <ImageBanner />
       </Grid>
     </View>
   )
