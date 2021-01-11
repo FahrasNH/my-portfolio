@@ -14,11 +14,13 @@ const ImageBanner = ({ state, setState }) => (
         right="0"
         bottom="80px"
         position="absolute"
+        imageName="dot-img"
         source={require('../../../assets/illustrations/Dot-2.svg')}
       />
       <Image
         top="-80px"
         position="relative"
+        imageName="my-img"
         source={require('../../../assets/images/my-picture.svg')}
       />
       <View

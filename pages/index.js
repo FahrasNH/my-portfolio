@@ -1,7 +1,12 @@
-import Header from '../components/organisme/Header'
+import { Dashboard } from '../components/templates'
+import { useRouter } from 'next/router'
 
 export default function Home() {
-  return (
-    <Header/>
-  )
+  const router = useRouter()
+
+  if (router.pathname === '/') {
+    return <Dashboard router={router} />
+  }
+
+  return ''
 }
