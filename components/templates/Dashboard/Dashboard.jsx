@@ -1,14 +1,14 @@
 import React from 'react'
 import {
-	Header,
-	CodeSlider,
+  Header,
+  CodeSlider,
 } from '../../organisme'
 
-const Dashboard = ({ router }) => (
-	<>
-		<Header router={router} />
-		<CodeSlider />
-	</>
+const Dashboard = () => (
+  <>
+    <Header />
+    <CodeSlider />
+  </>
 )
 
 export default  Dashboard

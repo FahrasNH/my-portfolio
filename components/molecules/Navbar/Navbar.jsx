@@ -31,10 +31,10 @@ const Navbar = ({ state, setState, router }) => (
     }}>
       <List className="navbar-menu">
         {['/', '/portfolio', '/contact'].map((text, index) => {
-          const active = router.pathname === text ? 'active' : ''
+          const active = router === text ? 'active' : ''
 
           return (
-            <ListItem button key={text} className="navbar-item" style={{ marginRight: (router.pathname !== '/') && (text === '/contact') ? '0' : '50px', }}>
+            <ListItem button key={text} className="navbar-item" style={{ marginRight: (router !== '/') && (text === '/contact') ? '0' : '50px', }}>
               <Link href={text}>
                 <ListItemText primary={text !== '/' ? capitalize(text.slice(1)) : 'Menu'} className={`navbar-text ${active}`}/>
               </Link>
@@ -42,7 +42,7 @@ const Navbar = ({ state, setState, router }) => (
           )
         })}
 
-        { router.pathname === '/' && (
+        { router === '/' && (
           <ListItem className="navbar-switch">
             <ListItemIcon>
               <Switch
