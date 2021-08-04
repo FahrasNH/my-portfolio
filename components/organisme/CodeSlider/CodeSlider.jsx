@@ -6,7 +6,7 @@ const CodeSlider = () => {
   return (
     <>
       <View
-        margin="200px 0 0 0"
+        margin="300px 0 0 0"
         padding="0 105px"
         display="block"
         textAlign="center"

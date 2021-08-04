@@ -1,0 +1,41 @@
+.experience-container {
+  width: 275px;
+  height: 185px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1);
+  background-color: rgba(255, 255, 255, .15);
+  .experience-total {
+    margin: 0;
+    font-size: 42px;
+    color: #6537AA;
+    font-family: 'Skranji', cursive;
+  }
+  .experience-border {
+    border-top: 1px solid #1C1E26;
+  }
+  .experience-name {
+    color: #1C1E26;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+  }
+}
+
+.circle-1 {
+  left: 0;
+  position: absolute;
+}
+
+.circle-2 {
+  top: -10%;
+  right: 10%;
+  position: absolute;
+}
+
+.circle-3 {
+  right: 10%;
+  bottom: -30%;
+  position: absolute;
+}

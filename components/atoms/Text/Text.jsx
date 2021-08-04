@@ -5,12 +5,12 @@ const Text = (props) => {
   const { classNames, children, ...styles } = props
 
   return (
-    <div
+    <p
       className={classNames}
       style={{...styles}}
     >
       {children}
-    </div>
+    </p>
   )
 }
 
