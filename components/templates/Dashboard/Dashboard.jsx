@@ -1,8 +1,10 @@
 import React from 'react'
+import { Footer } from '../../molecules'
 import {
   Header,
   CodeSlider,
-  Experience
+  Experience,
+  About
 } from '../../organisme'
 
 const Dashboard = () => (
@@ -10,6 +12,8 @@ const Dashboard = () => (
     <Header />
     <CodeSlider />
     <Experience />
+    <About />
+    <Footer />
   </>
 )
 
