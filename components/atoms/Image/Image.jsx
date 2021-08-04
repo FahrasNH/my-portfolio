@@ -19,6 +19,6 @@ Image.propTypes = {
   styles: string,
   classNames: string,
   source: string.isRequired,
-  imageName: string.isRequired,
+  imageName: string,
 }
 export default Image
